@@ -12,3 +12,7 @@ import day7_messages # Here we imported module ie another python file into our p
 day7_messages.print_hello()
 
 # TASK: create your own module, then import it and execute the program
+
+import day7_module
+
+day7_module.awawa()

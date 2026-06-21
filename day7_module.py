@@ -1,0 +1,2 @@
+def awawa():
+    print("awawa")
