@@ -50,3 +50,12 @@ class Cat:
 kitty = Cat()
 
 # TASK: create simple class with couple of methods and then create an instance of your new class
+
+class Pencil:
+    def write(self):
+        print("Pshhh... Fwphhh... Swsh...")
+    def erase(self):
+        print("ffffff.... ffff....")
+
+pencil2 = Pencil()
+pencil2.erase()
