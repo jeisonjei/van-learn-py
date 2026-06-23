@@ -26,8 +26,8 @@ print(type(doggy)) # <class 'type'> - WHAT? WHY?
 
 # And now let's create dog instance correctly, with parenthesis:
 
-doggy1 = Dog()
-doggy1.bark() # TypeError: Dog.bark() takes 0 positional arguments but 1 was given - ERROR! BUT WHY?
+# doggy1 = Dog()
+# doggy1.bark() # TypeError: Dog.bark() takes 0 positional arguments but 1 was given - ERROR! BUT WHY?
 
 # We should usually assign "self" parameter - this is class instance reference
 # So, correct class definition will be
@@ -60,7 +60,7 @@ class SuperDog:
     def what_is_my_name(self):
         print(f'My name is {self.name}')
 
-superDoggy = SuperDog("Rex", "11")
+superDoggy = SuperDog("Rex", 11)
 superDoggy.what_is_my_name() # My name is Rex! GREAT!!
 
 # Have you noticed new "__init__" method in the "SuperDog"? This method is called "class constructor"
@@ -72,4 +72,17 @@ superDoggy.what_is_my_name() # My name is Rex! GREAT!!
 # TASK1: explain why we should not create class instance withough parenthesis (and actually we can't)
 # TASK2: create your own class with attributes, explain (imagine) what attributes can be useful when we're creating class instance
 
+
+class WashingMachine:
+    def __init__(self, serial_number, version):
+        self.serial_number = serial_number
+        self.version = version
+    def wash(self):
+        print("Doing the dishes")
+    def clear_space(self):
+        print("self-washing")
+
+washing_machine1 = WashingMachine("RK141234", "2.22")
+washing_machine1.wash()
+washing_machine1.clear_space()
 
