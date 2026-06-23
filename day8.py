@@ -23,11 +23,12 @@ class Dog:
     def bark(self):
         print("Gav gav!")
     def sleep(self):
-        print("Uff.....afff......")
+        print("Zzzzz.........")
 
 # Good. But what we just did called "class definition" ie we defined a class, but didn't actually create it.
 # To create a class instance we well use our magic symbols "()" - remember, we used to use them before?
-# Also pay attention to the "self" keyword - this is first default parameter of every class function and we always add it.
+# Also pay attention to the "self" keyword - it is a special parameter that refers to the object itself. You always put "self" as first 
+# method parameter in classes. We'll learn some this rule exceptions much later
 # The "self" pointing out on the class instance itself - just remember this for now
 
 import time # Importing time module
@@ -42,7 +43,7 @@ doggy.sleep()
 # Here we define some class - Class Definition. Another words we create template with will help us to create as many cats as we want
 
 class Cat:
-    def speak(self):
+    def speak():
         print("Mew mew")
 
 # And here we create an instance of this Cat class ie we're creating exactly 1 cat here ^_^
