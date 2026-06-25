@@ -10,8 +10,8 @@
 
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 
-LOCAL_HOST = "localhost"
-LOCAL_PORT = 8000
+LOCAL_HOST = "127.0.0.1"
+LOCAL_PORT = 12
 
 my_server = HTTPServer((LOCAL_HOST, LOCAL_PORT), SimpleHTTPRequestHandler)
 

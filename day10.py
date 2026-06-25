@@ -13,7 +13,7 @@ from PIL import Image
 from io import BytesIO 
 import requests
 
-status = 200 # Try to change this
+status = 500 # Try to change this
 
 response = requests.get(f"https://http.cat/{status}") # For now you'll learn simpliest "get" method. Other HTTP methods are: POST, PUT, DELETE - we'll learn them later
 
