@@ -25,7 +25,7 @@ class TemperatureUnitsConverter:
         result = degrees_in_celsius * 9/5 + 32
         return result
 
-result = TemperatureUnitsConverter.fahrenheit_to_celsius(100) # See? We didn't create class instance here
+result = TemperatureUnitsConverter.celsius_to_fahrenheit(25) # See? We didn't create class instance here
 print(result)
     
 # TASK0: Run this function to convert temperatures
@@ -35,3 +35,16 @@ print(result)
 
 import math
 PI = math.pi
+
+class AreaCalculate:
+    @staticmethod
+    def circle_area(radius):
+        result = (radius**2) * PI
+        return result
+    @staticmethod
+    def rectangle_area(a,b):
+        result = a * b
+        return result
+
+result = AreaCalculate.rectangle_area(8,4)
+print(result)
