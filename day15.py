@@ -43,8 +43,25 @@ print('g',g)
 
 # TASK0: list 3 useful strings methods
 # TASK1: create text, replace some substring in it and print result to the console
-# TASK0: create function taking given list of strings and replacing word 'dog' to 'cat' in these strings if word 'dog' is found.
+# TASK2: create function taking given list of strings and replacing word 'dog' to 'cat' in these strings if word 'dog' is found.
 # List example: ['my_dog', 'dog_likes_to_bark', 'dog_need_walk', 'I_m_junior_programmer']
 # Hints: use "for in" cycle, use "append list method", use "if" condition, and use some new strings method you're already know (I hope you'll guess with one)
 
+y = "Today_is_Monday"
+p = y.replace("Monday", "Sunday")
+print(p)
+
+def dog_replacer(list1):
+    f = []
+    for s in list1:
+        if "dog" in s:
+            y = s.replace("dog", "cat")
+            f.append(y)
+        else:
+            f.append(s)
+    return f
+
+initial_data = ['my_dog', 'dog_likes_to_bark', 'dog_need_walk', 'I_m_junior_programmer']
+l = dog_replacer(initial_data)
+print(l)
 
