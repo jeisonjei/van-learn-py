@@ -24,3 +24,20 @@ print(f'list_after_clear: {initial_list}')
 
 # TASK0: list at least 3 lists (arrays) methods
 # TASK1: create simple function to multiply each given list number by 2. Hint: you'll need to use "for in" cycle and "append" list method
+
+numbers_list = [1,2,3,4,5,6]
+numbers_list.remove(3)
+numbers_list.append("Daman : AWAWA!")
+numbers_list.reverse()
+print(numbers_list)
+
+def multuplier_list(given_list):
+    result = []
+    for x in given_list:
+        multiplied = x * 2
+        result.append(multiplied)
+    return result
+
+awawa_list = [1,2,3,5,6,7]
+result1 = multuplier_list(awawa_list)
+print(result1)
