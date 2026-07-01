@@ -19,13 +19,13 @@ console.log(a) // 1
 let contentElement = document.querySelector(".content")
 
 function cycleBackgroundColor(element) {
-    const colors = ["#ff6b6b", "#ffd93d", "#6bcb77", "#4d96ff", "#ff6bdf", "#c44dff"];
+    let colors = ["#ff6b6b", "#ffd93d", "#6bcb77", "#4d96ff", "#ff6bdf", "#c44dff"];
     let i = 0;
 
     setInterval(() => {
         element.style.backgroundColor = colors[i % colors.length];
         i++;
-    }, 1000);
+    }, 100);
 }
 
 cycleBackgroundColor(contentElement);
