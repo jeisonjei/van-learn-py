@@ -48,14 +48,14 @@ let myObject = {}
 // Let's create simple rocket launch website - you can see `day18_page.html` file and it's JS code will be
 // written right here in `day18.js`
 
-let selectorsObject = {f : "#launch-button", s : "div.countdown span#seconds",
-  t : "div.countdown", fr : "div.content"
+let selectorsObject = {selector1 : "#launch-button", selector2 : "div.countdown span#seconds",
+  selector3 : "div.countdown", selector4 : "div.content"
 }
 
 
 
 function registerEventListeners() {
-  let launchButton = document.querySelector(selectorsObject.f);
+  let launchButton = document.querySelector(selectorsObject.selector1);
   launchButton.addEventListener("click", () => {
     launch()
   }); // Complete this
@@ -68,7 +68,7 @@ let launch = () => {
 
 function runCountdown() {
   setInterval(() => {
-    let countdownElement = document.querySelector(selectorsObject.s);
+    let countdownElement = document.querySelector(selectorsObject.selector2);
     let currentValue = parseInt(countdownElement.textContent);
     countdownElement.textContent = currentValue - 1;
     console.log(`TextContent: ${countdownElement.textContent}`);
@@ -82,9 +82,9 @@ function runCountdown() {
 }
 
 function launchRocket() {
-  let countdownElement = document.querySelector(selectorsObject.t);
+  let countdownElement = document.querySelector(selectorsObject.selector3);
   countdownElement.textContent = "Start!";
-  let rocketElement = document.querySelector(selectorsObject.fr);
+  let rocketElement = document.querySelector(selectorsObject.selector4);
   let beautifulColors = [
     "#FF5A5F", // Sunset Coral
     "#FFB400", // Vibrant Amber
