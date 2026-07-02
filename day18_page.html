@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body *{
+            padding: 0;
+            margin: 0;
+        }
+
+        .content {
+            padding: 10px 20px 10px 20px;   
+            height: 100vh;
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            background-color: #f5f5f5;
+        }
+
+        .title {
+            font-family: Roboto, sans-serif;
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+        }
+
+        .countdown {
+            font-family: Roboto, sans-serif;
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .launch {
+            font-family: Roboto, sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            padding: 10px 20px 10px 20px;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            <div class="title">Rocket launch simulator</div>
+        </div>
+        <div class="countdown">Countdown: <span id="seconds">10</span> seconds</div>
+        <div class="actions">
+            <button id="launch-button" class="launch">Launch</button>
+        </div>
+    </div>
+    <script src="day18.js"></script>
+</body>
+</html>
