@@ -100,3 +100,4 @@ registerEventListeners();
 // TASK1: Make `launch` function to be an arrow function
 // TASK2: Create top level object keeping all css selectors this JS code uses and replace hardcoded selectors
 // with the object properties
+// TASK3: Create separate directory, copy `day18*` files, create github repository and deploy with Vercel
