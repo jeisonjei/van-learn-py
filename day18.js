@@ -37,12 +37,10 @@ let rocket = {
     console.log("Rocket is launching...");
   },
 };
+ 
+let myObject = {}
 
 // Here our object have 3 properties: `model`, `mass` and `launch`. Pay attention that `launch` property is a function simply assigned to variable. This is very common in JavaScript. You can create object with properties and methods (functions) and use them later. For example we can call `rocket.launch()` to launch the rocket
-
-/**
- * DEPLOYMENT TO VERCEL
- */
 
 // In fact website deployment not an easy thing - this is separate big topic. But nowadays there are services
 // that make this process very simple
@@ -50,19 +48,27 @@ let rocket = {
 // Let's create simple rocket launch website - you can see `day18_page.html` file and it's JS code will be
 // written right here in `day18.js`
 
-function registerEventListeners() {
-  let launchButton = document.querySelector("#launch-button");
-  launchButton.addEventListener("click", ); // Complete this
+let selectorsObject = {f : "#launch-button", s : "div.countdown span#seconds",
+  t : "div.countdown", fr : "div.content"
 }
 
-function launch() {
+
+
+function registerEventListeners() {
+  let launchButton = document.querySelector(selectorsObject.f);
+  launchButton.addEventListener("click", () => {
+    launch()
+  }); // Complete this
+}
+
+let launch = () => {
   console.log(`Rocket is launching...`);
   runCountdown();
 }
 
 function runCountdown() {
   setInterval(() => {
-    let countdownElement = document.querySelector("div.countdown span#seconds");
+    let countdownElement = document.querySelector(selectorsObject.s);
     let currentValue = parseInt(countdownElement.textContent);
     countdownElement.textContent = currentValue - 1;
     console.log(`TextContent: ${countdownElement.textContent}`);
@@ -76,9 +82,9 @@ function runCountdown() {
 }
 
 function launchRocket() {
-  let countdownElement = document.querySelector("div.countdown");
+  let countdownElement = document.querySelector(selectorsObject.t);
   countdownElement.textContent = "Start!";
-  let rocketElement = document.querySelector("div.content");
+  let rocketElement = document.querySelector(selectorsObject.fr);
   let beautifulColors = [
     "#FF5A5F", // Sunset Coral
     "#FFB400", // Vibrant Amber

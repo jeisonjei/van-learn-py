@@ -34,5 +34,7 @@ cycleBackgroundColor(contentElement);
 // TASK1: Change interval colors changing
 // TASK2: Clear any page in the browser. Hint: USE browser console and `document.documentElement.innerHTML = ''` statement
 
-
+function printHello(){
+console.log("Privet")
+}
 
