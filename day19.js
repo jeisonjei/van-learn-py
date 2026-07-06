@@ -86,7 +86,7 @@ let result = doubleArrayItems(arr);
  * using `<script>` tag
  */
 /**
- * TASK1: Look carefully to `doubleArrayItems` function. How much SCOPES do you see there? 
+ * TASK1: Look carefully to `doubleArrayItems` function. How much SCOPES do you see there? Name them
  */
 
 

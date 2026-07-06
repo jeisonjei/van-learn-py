@@ -52,8 +52,6 @@ let selectorsObject = {selector1 : "#launch-button", selector2 : "div.countdown 
   selector3 : "div.countdown", selector4 : "div.content"
 }
 
-
-
 function registerEventListeners() {
   let launchButton = document.querySelector(selectorsObject.selector1);
   launchButton.addEventListener("click", () => {
