@@ -34,15 +34,14 @@ let a = 1;
 function changeA() {
     a = 2;
 }
-
+changeA()
 console.log(`a: ${a}`); // a: 2
 
-// See? Function have access to `a` variable defined globally and can change it!
+// See? Function have access to `a` variable defined in outerscope and can change it!
 
 /**
  * Another example:
  */
-
 function createOwnB() {
     let b = 2;
     console.log(`b: ${b}`);
@@ -80,8 +79,8 @@ let result = doubleArrayItems(arr);
 // I think you caught the concept
 
 /**
- * TASK0: Create `day19-1.js` file and `day19.html` file, then define in `day19-1.js` file variable in global scope.
- * Then create function and print the globally defined variable. Try to redefine this global function from 
+ * TASK0: Create `day19-1.js` file and `day19.html` file, then define in `day19-1.js` file variable in outerscope scope. БОЛЬШЕ ТАК НИ ДЕЛАЦ!
+ * Then create function and print the outerscoped defined variable. Try to redefine this outerscope variable from 
  * the function. What will happen with your variable then? Run html file. Don't forget to link `day19-1.js` file
  * using `<script>` tag
  */
