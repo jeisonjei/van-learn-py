@@ -22,7 +22,7 @@
  */
 
 /**
- * And `if else` cycle works similarly as in Python language.
+ * And `if else` condition works similarly as in Python language.
  * Let's show all this in examples
  */
 
@@ -41,10 +41,10 @@ let volga = {
  * Now let's go through this object values and print them
  */
 
-for (const key in volga) {
+for (var key in volga) {
     if (!Object.hasOwn(volga, key)) continue; // This line is just guard, We'll learn this expression by the way
     
-    const volgaProperty = volga[key];
+    var volgaProperty = volga[key];
     
     console.log(`🔥 element:`, volgaProperty);
 }
@@ -60,14 +60,14 @@ let computerParts = [
     'ram', // RAM (Random-Access Memory) is your computer's short-term memory
     'display',
     'keyboard',
-    'hard drive' // Your computer's long-term memory
+    'Hard Disk : SSD' // Your computer's long-term memory
 ]
 
 /**
  * Let's do the same thing with this array using `for of` and then `for` cycles
  */
 
-for (const part of computerParts) {
+for (var part of computerParts) {
     console.log(`🔥 part:`, part);
 }
 
@@ -78,7 +78,7 @@ for (const part of computerParts) {
  */
 
 for (let i = 0; i < computerParts.length; i++) {
-    const part = computerParts[i];
+    var part = computerParts[i];
     
     console.log(`🔥 part:`, part);
 }
@@ -111,3 +111,13 @@ else {
  * Use `Math` builtin JavaScript module to get `PI` number.
  * Then execute this function
  */
+function checkNumber(numb) {
+    if(numb > Math.PI){
+        console.log(numb);
+    }
+    else{
+        console.log("It's too small");
+    }
+}
+
+checkNumber(1)
