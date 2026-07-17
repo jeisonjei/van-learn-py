@@ -36,7 +36,9 @@ type Car = {
  */
 
 let car1: Car = {
-
+    model : "67rizzsigma",
+    speed : 67,
+    isRunning : true
 }
 
 /**

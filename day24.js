@@ -39,3 +39,44 @@ typeof a; // null
 /**
  * Create variables (just variables) with JS types you know and check their types
  */
+
+let car = {
+    speed : 120,
+    fueluse : "14lpm"
+}
+
+let emptyCar = {
+    speed : null,
+    fueluse : null
+} 
+
+// undefined
+let n;
+console.log(typeof n)
+
+// null
+let m = null;
+console.log(typeof m)
+
+// array
+let c = [1, 2, 3]
+console.log(typeof c)
+
+// object
+let y = {
+    apple : 12,
+    orange : 15
+}
+console.log(typeof y)
+
+// string
+let u = "brara"
+console.log(typeof u)
+
+// number
+let t = 1
+console.log(typeof t)
+
+// bolean
+let o = true
+console.log(typeof o)
