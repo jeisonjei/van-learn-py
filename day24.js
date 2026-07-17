@@ -37,5 +37,5 @@ typeof a; // null
 */
 
 /**
- * Create variables (just variables) with JS types you know and check their types
+ * Create variables (just variables) with JS types you know and check their
  */
