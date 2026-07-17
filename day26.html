@@ -1,0 +1,100 @@
+    <!-- #-------------------------- #
+    # ######### DAY 26 ######## #
+    # ------------------------- # -->
+
+
+<!-- You're leaning programming 25 days. And I'm proud that you're still involved
+To share information you need web pages and to make web pages beautiful you need css language. Let's learn how html and css connected to each other.
+Here you see simple html page 
+Also you see <style></style> tag where our css
+code will be located. Usually in web development
+separate css file is being used linked with html by
+<link href="your-css-file.css"/>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* This entire block is called `rule`,
+        `.page` is called "selector" and dot `.` is pointing out that this selector is "class" selector 
+        There are other selectors like `#` meaning "id" selector for example, 
+        and if you'll use just tag name like `div` with no `#` or `.` signs, you'll select all such tags
+        from the html page */
+        .content
+        {
+            height: 100%;
+
+        }
+
+        /* Here you see exactly "id" selector with `#` sign. This selector is usually being used
+        when there is only one such element on the page*/
+        #page {
+            /* Previously we used to change page background through `element.style.backgroundColor` JS property, 
+            but usually for page styling css is being used. Although you can use whatever you want */
+            background-color: aqua;
+            height: 100vh
+        }
+
+        /* Now let's remove browser added body margins and paddings. Notice that here we use "tag" selector 
+        But not only it... After "body" tag you see " " space and `*` asteriks sign. Space " " here means 
+        that we select all children no matter how deeply they are nested and `*` asteriks sign means
+        that we select all chilren tags */
+        body *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .header .title {
+            /* TODO: add font-size and color  */
+        }
+
+        .header .subtitle {
+            /* TODO: add font-size and color*/
+        }
+    </style>
+</head>
+<body>
+    <div id="page">
+        <div class="content">
+            <div class="header">
+                <div class="title">My achivements</div>
+                <div class="subtitle">In web development</div>
+            </div>
+            <div class="achivements">
+
+            </div>
+        </div>
+    </div>
+    <script>
+        var achivementElement = document.querySelector('.achivements');
+        var achivements = [
+            "python very basics",
+            "javascript arrow functions",
+            "the term 'callback function'",
+            "javascript objects: {}",
+            "javascript arrays: []",
+            "javascript `if-else` condition: if(){}else{}"
+        ]
+
+        for (let item of achivements) {
+            let itemElement = document.createElement("div");
+            itemElement.innerHTML = `<p>${item}</p>` // Notice <p> tag and `.innerHTML` property - here we use it instead of `textContent`
+            achivementElement.append(itemElement);
+        }
+    </script>
+</body>
+</html>
+
+<!-- Firstly change page style how you'd like to see it, then go to the TASKs -->
+
+<!-- TASK0: Reset `html` tag children margins and paddings
+like we did for `body` tag -->
+<!-- TASK1: Explain what `.header .title` and `.header .subtitle` means -->
+<!-- TASK2: Set appropriate font-size for the `.title` and `.subtitle` class (see TODOs) -->
+<!-- TASK3: Display achivements only if they not related to python language.
+Hint: use `if(){}` conditional expression and check if `item` not includes "python"
+word using `.includes()` string method -->
