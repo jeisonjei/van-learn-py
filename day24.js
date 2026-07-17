@@ -37,6 +37,7 @@ typeof a; // null
 */
 
 /**
+<<<<<<< HEAD
  * Create variables (just variables) with JS types you know and check their types
  */
 
@@ -80,3 +81,7 @@ console.log(typeof t)
 // bolean
 let o = true
 console.log(typeof o)
+=======
+ * Create variables (just variables) with JS types you know and check their
+ */
+>>>>>>> 7bd834d5f56569895f1583dee6c993def1e6c200
