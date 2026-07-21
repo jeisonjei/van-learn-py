@@ -80,3 +80,13 @@ var resultV21 = doAnythingWithArray(arr, (array)=>{
  * TASK2: Create outer function and 2 inner callback functions which you'll pass to the outer function. Make up what your functions
  * will do by yourself
  */
+
+function ChangeTheArray(array, variab) {
+    var result = array.map(variab)
+    return result
+}
+
+var Changer = i=>i*2
+var c = [1,2,3]
+ChangeTheArray(c, Changer)
+
