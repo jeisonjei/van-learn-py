@@ -29,11 +29,15 @@ let diff = end - start; // Difference between end and start is performance time
 console.log(`${diff} ms`);
 
 /**
- * TASK0: Try to increase size to 10 millions. Then to 100 millions. Watch how creating such big arrays 
+ * TASK0: Create separate directory with `index.html` and `main.js` file. Then repeat program above there.
+ */
+
+/**
+ * TASK1: Try to increase size to 10 millions. Then to 100 millions. Watch how creating such big arrays 
  * takes more and more time to complete operation
  */
 
 /**
- * TASK1: Instead of numbers create an one million array of simple `{n: i}` objects in a similar way. Compare execution time
+ * TASK2: Instead of numbers create an one million array of simple `{n: i}` objects in a similar way. Compare execution time
  * with a task of creating an array of one million numbers. Why do you think this operation is slower? Then try with more complex object. Watch performance again.
  */
